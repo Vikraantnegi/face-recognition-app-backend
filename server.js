@@ -8,6 +8,7 @@ const signin = require('./controllers/Signin');
 const register = require('./controllers/Register');
 const profile = require('./controllers/Profile');
 
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0;
 app.use(bodyParser.json());
 app.use(cors());
 
