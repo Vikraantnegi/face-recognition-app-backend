@@ -14,10 +14,8 @@ app.use(cors());
 const db = knex({
     client: 'pg',
     connection: {
-      host : 'postgresql-clean-53355',
-      user : 'postgres',
-      password : 'msd7912!!',
-      database : 'braniac'
+      host : process.env.DATABASE_URL,
+      ssl : true
     }
   });
 
