@@ -21,7 +21,6 @@ const db = knex({
   });
 
 app.get('/', (req, res) =>{
-    res.send(db.users);
     res.redirect('/signin');
 })
 
